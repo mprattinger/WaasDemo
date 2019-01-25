@@ -1,0 +1,27 @@
+@import "../variables";
+@import "header";
+@import "nav";
+@import "main";
+@import "footer";
+
+html,
+body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0; // 1
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    color: $body-color;
+    text-align: left; // 3
+    background-color: $body-bg; // 2
+}
+
+app-root {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 40px auto 20px;
+    grid-template-columns: 250px 9fr;
+}

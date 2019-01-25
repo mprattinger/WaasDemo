@@ -1,0 +1,16 @@
+<ul class="nav-level1">
+  <li *ngFor="let item of menuItems" [ngClass]="(item.isActive) ? 'l1-active' : 'l1-inactive'" (click)="menuItemClicked(item)">
+    <div>{{item.label}}</div>
+    <ul [ngClass]="(item.children.length > 0 && item.isActive) ? 'nav-level2' : 'sublevel-nochilds'">
+      <li *ngFor="let child of item.children" [ngClass]="(child.isActive) ? 'l2-active' : 'l2-inactive'" (click)="menuItemClicked(child)">
+        <div>{{child.label}}</div>
+        <ul [ngClass]="(child.children.length > 0 && child.isActive) ? 'nav-level3' : 'sublevel-nochilds'">
+          <li *ngFor="let subchild of child.children" [ngClass]="(subchild.isActive) ? 'l3-active' : 'l3-inactive'"
+          (click)="menuItemClicked(subchild)">
+            <div>{{child.label}}</div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
