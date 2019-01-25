@@ -10,6 +10,7 @@ import { NavItem } from './models/nav-item';
 export class NavComponent implements OnInit {
 
   menuItems: NavItem[] = [];
+  lastClickedLevel: number = 0;
 
   constructor(private menuService: MenuService) { }
 
@@ -23,8 +24,10 @@ export class NavComponent implements OnInit {
   }
 
   async menuItemClicked(item: NavItem) {
-    this.menuItems = await this.menuService.loadMenu(item);
-    console.log(this.menuItems.length);
+    if (item.level > this.lastClickedLevel) {
+      this.menuItems = await this.menuService.loadMenu(item);
+      this.lastClickedLevel = item.level;
+    }
     // this.menuItems.forEach(x => {
     //   x.isActive = false;
     //   x.children = [];

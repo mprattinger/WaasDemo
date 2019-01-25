@@ -43,7 +43,7 @@ export class MenuService {
 
   private loadData(): Promise<NavItem[]> {
 
-    return this.httpClient.get<NavItem[]>("https://localhost:44318/api/v1/menu").toPromise();
+    return this.httpClient.get<NavItem[]>("https://localhost:5001/api/v1/menu").toPromise();
 
     // return new Promise<NavItem[]>()
     // this.httpClient.get("https://localhost:44318/api/v1/menu").subscribe((data: NavItem[]) => {

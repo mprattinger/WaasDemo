@@ -1,13 +1,13 @@
 <ul class="nav-level1">
-  <li *ngFor="let item of menuItems" [ngClass]="(item.isActive) ? 'l1-active' : 'l1-inactive'" (click)="menuItemClicked(item)">
-    <div>{{item.label}}</div>
-    <ul [ngClass]="(item.children.length > 0 && item.isActive) ? 'nav-level2' : 'sublevel-nochilds'">
-      <li *ngFor="let child of item.children" [ngClass]="(child.isActive) ? 'l2-active' : 'l2-inactive'" (click)="menuItemClicked(child)">
-        <div>{{child.label}}</div>
-        <ul [ngClass]="(child.children.length > 0 && child.isActive) ? 'nav-level3' : 'sublevel-nochilds'">
-          <li *ngFor="let subchild of child.children" [ngClass]="(subchild.isActive) ? 'l3-active' : 'l3-inactive'"
-          (click)="menuItemClicked(subchild)">
-            <div>{{child.label}}</div>
+  <li *ngFor="let level1 of menuItems" [ngClass]="(level1.isActive) ? 'l1-active' : 'l1-inactive'" (click)="menuItemClicked(level1)">
+    <div>{{level1.label}}</div>
+    <ul [ngClass]="(level1.children.length > 0 && level1.isActive) ? 'nav-level2' : 'sublevel-nochilds'">
+      <li *ngFor="let level2 of level1.children" [ngClass]="(level2.isActive) ? 'l2-active' : 'l2-inactive'" (click)="menuItemClicked(level2)">
+        <div>{{level2.label}}</div>
+        <ul [ngClass]="(level2.children.length > 0 && level2.isActive) ? 'nav-level3' : 'sublevel-nochilds'">
+          <li *ngFor="let level3 of level2.children" [ngClass]="(level3.isActive) ? 'l3-active' : 'l3-inactive'"
+          (click)="menuItemClicked(level3)">
+            <div>{{level3.label}}</div>
           </li>
         </ul>
       </li>
