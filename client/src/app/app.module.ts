@@ -1,3 +1,4 @@
+import { RmnComponent } from './rmn/rmn.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -13,7 +14,8 @@ import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component
     AppComponent,
     NavComponent,
     RmnLayoutComponent,
-    HomeLayoutComponent
+    HomeLayoutComponent,
+    RmnComponent
   ],
   imports: [
     BrowserModule,
