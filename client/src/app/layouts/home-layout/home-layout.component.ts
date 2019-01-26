@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home-layout',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeLayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    const id = this.route.snapshot.paramMap.get("rmnr");
+    console.log(id);
   }
 
 }

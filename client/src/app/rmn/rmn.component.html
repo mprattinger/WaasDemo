@@ -1,5 +1,14 @@
-<div>
-  <label>Rückmeldenummer eingeben:</label>
-  <input type="text" />
-  <input type="button" value="Weiter" />
+<div class="rmnr-container">
+<div class="rmnrIntput">
+  <form [formGroup]="rmnrForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="rmnr-input">
+      <input formControlName="rmnr" matInput placeholder="Rückmeldenummer" />
+      <mat-error *ngIf="rmnrForm.controls['rmnr'].invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <br />
+    <button type="submit" mat-raised-button color="primary" align="right" [disabled]="!rmnrForm.valid">
+      Anmelden
+    </button>
+  </form>
+</div>
 </div>

@@ -8,6 +8,10 @@ import { NavComponent } from './nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RmnLayoutComponent } from './layouts/rmn-layout/rmn-layout.component';
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule } from '@angular/material';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,8 +23,14 @@ import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component
   ],
   imports: [
     BrowserModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatIconModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
