@@ -12,18 +12,27 @@ $black:    #000 !default;
 $body-bg:                   $white !default;
 $body-color:                $gray-900 !default;
 
+$color-dark: #3C3B41;
+$color-light: #707070;
+$color-lighter: #B2B2B2;
+$color-blue: #1E6EB4;
+$color-lightblue: #3CAADC;
+
 $logo-font-color: white;
 
-$topbar-bg-color: #3C3B41;
+$topbar-bg-color: $color-dark;
 
-$sidebar-border-color: #707070;
-$sidebar-bg-color-l1: #8C8C8C;
-$sidebar-l1-seperator-color: #B2B2B2;
-$sidebar-bg-color-l2: #B2B2B2;
-$sidebar-bg-color-l3: #3CAADC;
+
+
+
+$sidebar-border-color: $color-light;
+$sidebar-bg-color-l1: $color-light;
+$sidebar-l1-seperator-color: $color-lighter;
+$sidebar-bg-color-l2: $color-lighter;
+$sidebar-bg-color-l3: $color-lightblue;
 $sidebar-font-color: $white;
 
-$footer-bg-color: #3C3B41;
+$footer-bg-color: $color-dark;
 
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
