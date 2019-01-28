@@ -10,7 +10,8 @@ const routes: Routes = [
   ] },
   {
     path: '', component: RmnLayoutComponent, children: [
-      { path: '', component: RmnComponent }
+      { path: '', component: RmnComponent },
+      { path: 'main', component: RmnComponent }
     ]
   },
   { path: '**', redirectTo: '' }

@@ -25,7 +25,7 @@ export class RmnComponent implements OnInit {
 
   onSubmit() {
     console.log(this.rmnrForm.value.rmnr);
-    this.router.navigate(['/home', {'rmnr' : this.rmnrForm.value.rmnr}]);
+    this.router.navigate(['/home'], { queryParams: {'rmnr' : this.rmnrForm.value.rmnr}, skipLocationChange: true });
   }
 
   getErrorMessage(){

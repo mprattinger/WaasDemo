@@ -11,8 +11,8 @@ export class HomeLayoutComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    const id = this.route.snapshot.paramMap.get("rmnr");
-    console.log(id);
+    const id = this.route.snapshot.queryParamMap.get('rmnr');
+    console.log("The id: " + id);
   }
 
 }

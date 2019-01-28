@@ -10,7 +10,7 @@ import { RmnLayoutComponent } from './layouts/rmn-layout/rmn-layout.component';
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule } from '@angular/material';
+import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule, MatCardModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -27,6 +27,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatSelectModule,
     MatIconModule,
+    MatCardModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
