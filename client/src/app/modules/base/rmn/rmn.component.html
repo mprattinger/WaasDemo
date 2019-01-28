@@ -1,8 +1,7 @@
 <div class="rmnr-container">
   <div class="rmnrIntput">
-    <!-- <mat-card> -->
-      <form [formGroup]="rmnrForm" (ngSubmit)="onSubmit()">
-          <mat-card>
+    <form [formGroup]="rmnrForm" (ngSubmit)="onSubmit()">
+      <mat-card>
         <mat-form-field class="rmnr-input">
           <input formControlName="rmnr" matInput placeholder="Rückmeldenummer" />
           <mat-error *ngIf="rmnrForm.controls['rmnr'].invalid">{{getErrorMessage()}}</mat-error>
@@ -12,7 +11,6 @@
           Anmelden
         </button>
       </mat-card>
-      </form>
-    <!-- </mat-card> -->
+    </form>
   </div>
 </div>

@@ -2,17 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-home-layout',
-  templateUrl: './home-layout.component.html',
-  styleUrls: ['./home-layout.component.scss']
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: ['./main.component.scss']
 })
-export class HomeLayoutComponent implements OnInit {
+export class MainComponent implements OnInit {
+
+  rmnrId = "";
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     const id = this.route.snapshot.queryParamMap.get('rmnr');
-    console.log("The id: " + id);
+    this.rmnrId = id;
   }
 
 }
