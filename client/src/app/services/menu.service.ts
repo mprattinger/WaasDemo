@@ -51,6 +51,15 @@ export class MenuService {
     // });
   }
 
+  // async loadMenuTree(): Promise<NavItem[]> {
+  //   if (this.menuData.length === 0) {
+  //     this.menuData = await this.loadData();
+  //   }
+
+
+
+  // }
+
   // loadMenu(selectedItem: NavItem = null): NavItem[] {
 
   //   const level1 = this.loadLevel1();

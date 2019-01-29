@@ -1,0 +1,21 @@
+@import "~src/sass/variables";
+
+.rmnr-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rmnrIntput > form {
+  width: 400px;
+}
+
+.rmnrIntput {
+  display: inline-block;
+  text-align: right;
+}
+
+.rmnr-input {
+  width: 100%;
+}

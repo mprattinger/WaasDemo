@@ -1,26 +1,11 @@
-# NG shortcuts
+# Usefull links
 
-Wenn man zu jedem Kommando ein *-d* hinzugibt, dann erhält man eine Vorschau was bei diesem Befehl erzeugt werden würde:
+[Angular Material Components](https://material.angular.io/components/categories)
 
-```
-C:\dev\js\waas\ng-test [master +4 ~4 -0 !]> ng g class nav/models -d
-CREATE src/app/nav/models.spec.ts (154 bytes)
-CREATE src/app/nav/models.ts (24 bytes)
+[Angular Dokumentation](https://angular.io/docs)
 
-NOTE: The "dryRun" flag means no changes were made.
-```
+[Angular Reactiv Forms blogpost](https://malcoded.com/posts/angular-fundamentals-reactive-forms)
 
-## Component
 
-ng g c *Component Name* oder
-ng generate component *Component Name*
-
-## Model
-
-ng g class *Class Name* oder
-ng generate class *Class Name*
-
-## Service
-
-ng g s *Service Name* oder
-ng generate service *Service Name*
+# Dokumentation
+[NG Cli Commandos](NG-CLI-shortcuts.md)
