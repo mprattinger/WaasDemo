@@ -1,20 +1,14 @@
 @import "~src/sass/variables";
 
-app-nav {
-    grid-row: 2 / 2;
-    background-color: $sidebar-bg-color-l1;
-    border-right: 2px solid $sidebar-border-color;
+ul {
+  list-style-type: none;
+  color: $sidebar-font-color;
+  margin: 0;
+  padding: 0;
 }
 
 .hide-nav {
     display: none;
-}
-
-app-nav ul {
-    list-style-type: none;
-    color: $sidebar-font-color;
-    margin: 0;
-    padding: 0;
 }
 
 .sublevel-nochilds {

@@ -22,12 +22,12 @@ export class RmnComponent implements OnInit {
   onSubmit() {
     console.log(environment.production + " " + this.rmnrForm.value.rmnr);
     if (environment.production) {
-      this.router.navigate(["/main"], {
+      this.router.navigate(["/base/main"], {
         queryParams: { rmnr: this.rmnrForm.value.rmnr },
         skipLocationChange: true
       });
     } else {
-      this.router.navigate(["/main"], {
+      this.router.navigate(["/base/main"], {
         queryParams: { rmnr: this.rmnrForm.value.rmnr }
       });
     }

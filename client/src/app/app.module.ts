@@ -7,11 +7,15 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { WaasLayoutComponent } from './layout/waas/waas-layout.component';
+import { BaseLayoutComponent } from './layout/base/base-layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    BaseLayoutComponent,
+    WaasLayoutComponent
   ],
   imports: [
     BrowserModule,
