@@ -9,3 +9,7 @@
 
 # Dokumentation
 [NG Cli Commandos](NG-CLI-shortcuts.md)
+
+# Angular Material plugin
+
+Die Code-Änderungen um das Plugin wieder auszubauen sind in diesem [Dokument](remove-material.md) zusammengefasst
