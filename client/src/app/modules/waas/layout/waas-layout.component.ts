@@ -3,8 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-waas-layout',
-  templateUrl: './home-layout.component.html',
-  styleUrls: ['./home-layout.component.scss']
+  templateUrl: './waas-layout.component.html',
+  styleUrls: ['./waas-layout.component.scss']
 })
 export class WaasLayoutComponent implements OnInit {
 

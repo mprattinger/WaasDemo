@@ -1,0 +1,96 @@
+@import "~src/sass/variables";
+
+app-nav {
+    grid-row: 2 / 2;
+    background-color: $sidebar-bg-color-l1;
+    border-right: 2px solid $sidebar-border-color;
+}
+
+.hide-nav {
+    display: none;
+}
+
+app-nav ul {
+    list-style-type: none;
+    color: $sidebar-font-color;
+    margin: 0;
+    padding: 0;
+}
+
+.sublevel-nochilds {
+  display: none;
+}
+
+.l1-inactive {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid $sidebar-l1-seperator-color;
+    font-size: 1.5em;
+}
+
+.l1-inactive:hover,
+.l1-active:hover {
+    background-color: $sidebar-bg-color-l2;
+}
+
+.l1-active {
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+.l1-active > div {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.nav-level2 {
+    background-color: $sidebar-bg-color-l2;
+    font-size: 0.7em;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.nav-level2{
+    border-bottom: 0;
+}
+
+.l2-inactive {
+    padding-top: 7px;
+    padding-left: 60px;
+    padding-bottom: 2px;
+}
+.l2-inactive:hover,
+.l2-active:hover {
+    background-color: $sidebar-bg-color-l3;
+}
+
+.l2-active {
+    padding-top: 7px;
+    padding-bottom: 2px;
+}
+.l2-active > div {
+    padding-left: 60px;
+    padding-bottom: 2px;
+}
+
+.nav-level3 {
+    background-color: $sidebar-bg-color-l3;
+    font-size: 0.9em;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.l3-inactive {
+    padding-top: 7px;
+    padding-left: 80px;
+    padding-bottom: 2px;
+}
+.l3-inactive:hover {
+    font-weight: bold;
+}
+.l3-active {
+    padding-top: 7px;
+    padding-left: 80px;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
