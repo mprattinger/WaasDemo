@@ -1,3 +1,5 @@
+@import 'becom-colors';
+
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -10,18 +12,18 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$body-bg:                   #3CAADC !default;
+$body-bg:                   $becom-light-blue !default;
 $body-color:                $gray-900 !default;
 
-$logo-font-color: #1E6EB4;
+$logo-font-color: $becom-dark-blue;
 
 $topbar-bg-color: $white;
 
-$sidebar-border-color: #1E6EB4;
-$sidebar-bg-color-l1: #1E6EB4;
-$sidebar-l1-seperator-color: #3CAADC;
-$sidebar-bg-color-l2: #3CAADC;
-$sidebar-bg-color-l3: #B2B2B2;
+$sidebar-border-color: $becom-dark-blue;
+$sidebar-bg-color-l1: $becom-dark-blue;
+$sidebar-l1-seperator-color: $becom-light-blue;
+$sidebar-bg-color-l2: $becom-light-blue;
+$sidebar-bg-color-l3: $becom-lighter-gray;
 $sidebar-font-color: $white;
 
 $footer-bg-color: $white;

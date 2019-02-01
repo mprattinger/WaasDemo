@@ -1,3 +1,5 @@
+@import 'becom-colors';
+
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -12,27 +14,18 @@ $black:    #000 !default;
 $body-bg:                   $white !default;
 $body-color:                $gray-900 !default;
 
-$color-dark: #3C3B41;
-$color-light: #707070;
-$color-lighter: #B2B2B2;
-$color-blue: #1E6EB4;
-$color-lightblue: #3CAADC;
-
 $logo-font-color: white;
 
-$topbar-bg-color: $color-dark;
+$topbar-bg-color: $becom-dark-gray;
 
-
-
-
-$sidebar-border-color: $color-light;
-$sidebar-bg-color-l1: $color-light;
-$sidebar-l1-seperator-color: $color-lighter;
-$sidebar-bg-color-l2: $color-lighter;
-$sidebar-bg-color-l3: $color-lightblue;
+$sidebar-border-color: $becom-light-gray;
+$sidebar-bg-color-l1: $becom-light-gray;
+$sidebar-l1-seperator-color: $becom-lighter-gray;
+$sidebar-bg-color-l2: $becom-lighter-gray;
+$sidebar-bg-color-l3: $becom-light-blue;
 $sidebar-font-color: $white;
 
-$footer-bg-color: $color-dark;
+$footer-bg-color: $becom-dark-gray;
 
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
