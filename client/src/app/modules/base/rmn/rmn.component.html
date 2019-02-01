@@ -1,9 +1,9 @@
 <div class="rmnr-container">
   <div class="rmnrIntput">
     <form [formGroup]="rmnrForm" (ngSubmit)="onSubmit()">
-          <input formControlName="rmnr" placeholder="Rückmeldenummer" />
-          <div *ngIf="rmnrForm.controls['rmnr'].invalid">{{getErrorMessage()}}</div>
-        <br />
+          <input formControlName="rmnr" placeholder="Rückmeldenummer"/>
+          <div *ngIf="rmnrForm.controls['rmnr'].invalid && ( rmnrForm.controls['rmnr'].dirty || rmnrForm.controls['rmnr'].touched )">{{getErrorMessage()}}</div>
+          <br />
         <button type="submit" mat-raised-button color="primary" align="right" [disabled]="!rmnrForm.valid">
           Anmelden
         </button>
